@@ -11,12 +11,12 @@ Este projeto utiliza Flask juntamente com o SQLAlchemy para criar um simples sis
 1. **Criar as tabelas no PostgreSQL**:
     Execute as seguintes instruções SQL para criar as tabelas necessárias:
 
-     sql
+    ``` sql
    CREATE TABLE car (
    	idcar SERIAL PRIMARY KEY,
     car_name VARCHAR(100) NOT NULL
 );
- sql
+ ```sql
 CREATE TABLE part (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -24,7 +24,8 @@ CREATE TABLE part (
     car_id INTEGER,
     FOREIGN KEY (car_id) REFERENCES car(idcar)
 );
-    ```
+```
+    
 
 2. **Configuração da Conexão**:
     No arquivo `config.py`, atualize a linha da URI do banco de dados para refletir suas credenciais de banco de dados locais:
