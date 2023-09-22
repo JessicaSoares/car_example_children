@@ -12,16 +12,19 @@ Este projeto utiliza Flask juntamente com o SQLAlchemy para criar um simples sis
     Execute as seguintes instruções SQL para criar as tabelas necessárias:
 
     ```sql
-    CREATE TABLE car (
-        idcar INTEGER PRIMARY KEY
-    );
+   CREATE TABLE car (
+   	idcar SERIAL PRIMARY KEY,
+    car_name VARCHAR(100) NOT NULL
+);
 
-    CREATE TABLE part (
-        id INTEGER PRIMARY KEY,
-        name VARCHAR(50) NOT NULL,
-        price INTEGER NOT NULL,
-        idcar INTEGER REFERENCES car(idcar)
-    );
+CREATE TABLE part (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    price INTEGER NOT NULL,
+    car_id INTEGER,
+    FOREIGN KEY (car_id) REFERENCES car(idcar)
+);
+
     ```
 
 2. **Configuração da Conexão**:
