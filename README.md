@@ -33,7 +33,8 @@ Este projeto utiliza Flask juntamente com o SQLAlchemy para criar um simples sis
 
     Substitua `postgres:senha` pelo seu usuário e senha do PostgreSQL e `localhost/postgres` pelo seu host e nome de banco de dados, se for diferente.
 
-    3. **Executando**:
+
+3. **Executando**:
     Na raiz do projeto executar com python run.py
 
 
@@ -51,4 +52,3 @@ Estes dados são úteis para testar o código que verifica se um carro com peça
 
 ---
 
-Agora, você pode adicionar este `README.md` à raiz do seu projeto para que outros desenvolvedores saibam como configurar e testar o projeto.
