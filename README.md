@@ -31,7 +31,12 @@ Este projeto utiliza Flask juntamente com o SQLAlchemy para criar um simples sis
     SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:senha@localhost/postgres'
     ```
 
-    Substitua `postgres:3012` pelo seu usuário e senha do PostgreSQL e `localhost/postgres` pelo seu host e nome de banco de dados, se for diferente.
+    Substitua `postgres:senha` pelo seu usuário e senha do PostgreSQL e `localhost/postgres` pelo seu host e nome de banco de dados, se for diferente.
+
+    3. **Executando**:
+    Na raiz do projeto executar com python run.py
+
+
 
 ## Povoamento Inicial (Opcional)
 
