@@ -43,16 +43,5 @@ CREATE TABLE part (
 
 
 
-## Povoamento Inicial (Opcional)
 
-Para testar a funcionalidade do sistema, você pode inserir os seguintes dados no banco de dados:
-
-```sql
-INSERT INTO car (idcar) VALUES (1);
-INSERT INTO part (name, price, idcar) VALUES ('pecaA', 100, 1), ('pecaB', 200, 1);
-```
-
-Estes dados são úteis para testar o código que verifica se um carro com peças específicas existe no banco.
-
----
 
