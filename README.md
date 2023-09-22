@@ -16,7 +16,8 @@ Este projeto utiliza Flask juntamente com o SQLAlchemy para criar um simples sis
    	idcar SERIAL PRIMARY KEY,
     car_name VARCHAR(100) NOT NULL
 );
- ```sql
+```
+
 CREATE TABLE part (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
